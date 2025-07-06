@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tenant-Landlord Chat</title>
+  <link rel="stylesheet" href="/real_estate_folder/css_files/chat_style.css" />
+</head>
+<body>
+  <h2>Chat Between Tenant and Landlord</h2>
+
+  <label for="roleSelect">Select Role:</label>
+  <select id="roleSelect">
+    <option value="tenant">Tenant</option>
+    <option value="landlord">Landlord</option>
+  </select>
+
+  <div id="chatBox"></div>
+
+  <div id="controls">
+    <input type="text" id="messageInput" placeholder="Type a message..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script>
+    let socket;
+    let role = document.getElementById('roleSelect').value;
+
+    document.getElementById('roleSelect').addEventListener('change', function () {
+      role = this.value;
+      connectSocket();
+    });
+
+    function connectSocket() {
+      if (socket) socket.close();
+      socket = new WebSocket('ws://localhost:5000');
+
+      socket.onopen = () => {
+        logMessage(`Connected as ${role}`, 'system');
+      };
+
+      socket.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        logMessage(`${data.from}: ${data.text}`, data.from);
+      };
+
+      socket.onclose = () => {
+        logMessage('Disconnected from server', 'system');
+      };
+    }
+
+    function sendMessage() {
+      const input = document.getElementById('messageInput');
+      const text = input.value.trim();
+      if (text && socket.readyState === WebSocket.OPEN) {
+        socket.send(JSON.stringify({ role, text }));
+        logMessage(`You: ${text}`, role);
+        input.value = '';
+      }
+    }
+
+    function logMessage(msg, sender = 'system') {
+      const chatBox = document.getElementById('chatBox');
+      const div = document.createElement('div');
+
+      const timestamp = new Date().toLocaleTimeString();
+
+      div.className = 'msg';
+      if (sender === 'tenant') div.classList.add('tenant');
+      if (sender === 'landlord') div.classList.add('landlord');
+
+      div.innerHTML = `${msg}<span class="timestamp">${timestamp}</span>`;
+      chatBox.appendChild(div);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    document.getElementById('sendBtn').addEventListener('click', sendMessage);
+    connectSocket();
+  </script>
+</body>
+</html>
