@@ -1,0 +1,162 @@
+#chatBox {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: scroll;
+    background: #f9f9f9;
+  }
+  #chatBox div {
+    margin-bottom: 5px;
+  }
+  #messageInput {
+    width: 75%;
+    padding: 8px;
+  }
+  #sendBtn {
+    padding: 8px 12px;
+  }
+  body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #roleSelect {
+      margin: 10px auto;
+      display: block;
+    }
+
+    #chatBox {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      height: 350px;
+      border: 1px solid #ccc;
+      background: #ffffff;
+      padding: 10px;
+      overflow-y: scroll;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .msg {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      max-width: 80%;
+      display: inline-block;
+      clear: both;
+    }
+
+    .msg.tenant {
+      background: #e3f2fd;
+      float: left;
+    }
+
+    .msg.landlord {
+      background: #ffe0b2;
+      float: right;
+      text-align: right;
+    }
+
+    .timestamp {
+      display: block;
+      font-size: 0.75em;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    #controls {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    #messageInput {
+      width: 70%;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #sendBtn {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    #roleSelect {
+      margin: 10px auto;
+      display: block;
+    }
+
+    #chatBox {
+      width: 90%;
+      max-width: 600px;
+      margin: 0 auto;
+      height: 350px;
+      border: 1px solid #ccc;
+      background: #ffffff;
+      padding: 10px;
+      overflow-y: scroll;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .msg {
+      margin-bottom: 10px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      max-width: 80%;
+      display: inline-block;
+      clear: both;
+    }
+
+    .msg.tenant {
+      background: #e3f2fd;
+      float: left;
+    }
+
+    .msg.landlord {
+      background: #ffe0b2;
+      float: right;
+      text-align: right;
+    }
+
+    .timestamp {
+      display: block;
+      font-size: 0.75em;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    #controls {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    #messageInput {
+      width: 70%;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    #sendBtn {
+      padding: 8px 12px;
+      font-size: 16px;
+    }
