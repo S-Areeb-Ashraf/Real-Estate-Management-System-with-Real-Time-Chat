@@ -145,7 +145,6 @@ CREATE TABLE users (
 
 ## Screenshots / UI Highlights
 
-_(Add screenshots of dashboard, chat UI, and ads if needed)_
 
 ### Landlord Managing properties
 ![alt text](/real_estate_folder/web_pics/image-4.png)
