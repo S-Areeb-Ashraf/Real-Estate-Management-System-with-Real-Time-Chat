@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landlord Agreement</title>
+    <link rel="stylesheet" href="/real_estate_folder/css_files/landlord_agreement_style.css">
+</head>
+<body>
+    <div class="agreement-container">
+        <h2>Agreement Requests</h2>
+        <div id="pending-requests-section">
+            <ul id="pending-requests-list"></ul>
+        </div>
+        <div id="agreement-form-section" style="display:none;">
+            <h3>Fill Agreement Details</h3>
+            <form id="agreement-form">
+                <label>Duration: <input type="date" name="duration" required></label><br>
+                <label>Deposit: <input type="number" name="deposit" required></label><br>
+                <label>Rent Amount: <input type="number" name="rent_amount" required></label><br>
+                <label>Rent Increase (months): <input type="number" name="rent_increase_x_months" required></label><br>
+                <button type="submit">Submit Agreement</button>
+                <button type="button" id="exit-agreement-btn">Exit Agreement</button>
+            </form>
+        </div>
+    </div>
+    <script src="/real_estate_folder/js_scripts/landlord_agreement_script.js"></script>
+</body>
+</html> 
