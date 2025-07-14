@@ -1,0 +1,113 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.agreement-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    border: 1px solid #eee;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.agreement-container:hover {
+    box-shadow: 0 8px 32px rgba(255,167,38,0.15), 0 2px 8px rgba(0,0,0,0.10);
+    transform: translateY(-4px) scale(1.01);
+}
+
+h2, h3 {
+    color: #FFA726;
+    font-weight: 700;
+    text-align: center;
+}
+
+#property-list {
+    list-style: none;
+    padding: 0;
+}
+#property-list li {
+    margin: 10px 0;
+    padding: 14px 18px;
+    background: #fafafa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(255,167,38,0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+#property-list li:hover {
+    background: #fff3e0;
+    box-shadow: 0 4px 16px rgba(255,167,38,0.12);
+    transform: scale(1.01);
+}
+#property-list button {
+    background: #FFA726;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(255,167,38,0.10);
+}
+#property-list button:hover {
+    background: #fb8c00;
+    box-shadow: 0 4px 16px rgba(255,167,38,0.18);
+    transform: translateY(-2px) scale(1.01);
+}
+#agreement-status, #agreement-details, #current-agreement-details {
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 4px rgba(255,167,38,0.08);
+}
+button, #final-confirm-btn, #final-exit-btn, #exit-agreement-btn, #current-exit-btn {
+    background: #FFA726;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 8px 4px 0 0;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    box-shadow: 0 2px 8px rgba(255,167,38,0.10);
+}
+button:hover, #final-confirm-btn:hover, #final-exit-btn:hover, #exit-agreement-btn:hover, #current-exit-btn:hover {
+    background: #fb8c00;
+    box-shadow: 0 4px 16px rgba(255,167,38,0.18);
+    transform: translateY(-2px) scale(1.01);
+}
+button:active, #final-confirm-btn:active, #final-exit-btn:active, #exit-agreement-btn:active, #current-exit-btn:active {
+    background: #FFA726;
+    transform: scale(0.97);
+}
+@media (max-width: 768px) {
+    .agreement-container {
+        padding: 12px 4px;
+        width: 98vw;
+    }
+    #property-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+        padding: 10px 8px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+} 
