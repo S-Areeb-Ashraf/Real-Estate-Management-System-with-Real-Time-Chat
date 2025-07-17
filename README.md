@@ -150,12 +150,7 @@ CREATE TABLE users (
 _(Add screenshots of dashboard, chat UI, and ads if needed)_
 
 
-### Login / Register Page
-![alt text](/real_estate_folder/web_pics/image-8.png)
-![alt text](/real_estate_folder/web_pics/image-9.png)
-
 ### Dashboard
-![alt text](/real_estate_folder/web_pics/image-10.png)
 ![alt text](/real_estate_folder/web_pics/image-11.png)
 
 ### Agreement Between Landlord & Tenant
