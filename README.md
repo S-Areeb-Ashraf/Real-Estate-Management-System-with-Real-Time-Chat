@@ -147,8 +147,6 @@ CREATE TABLE users (
 
 ## Screenshots / UI Highlights
 
-_(Add screenshots of dashboard, chat UI, and ads if needed)_
-
 
 ### Dashboard
 ![alt text](/real_estate_folder/web_pics/image-11.png)
