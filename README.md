@@ -7,6 +7,14 @@ This project is a full-stack real estate management platform that allows **landl
 
 <img width="1919" height="778" alt="image" src="https://github.com/user-attachments/assets/db495bae-1312-4429-b8bc-8097f6f0e51d" />
 
+<img width="1909" height="613" alt="image" src="https://github.com/user-attachments/assets/f14c1ab6-6bec-4a73-b11d-0989ba8670d1" />
+
+<img width="1803" height="718" alt="image" src="https://github.com/user-attachments/assets/191ea36a-3990-44f7-bb67-561ca9d96be6" />
+
+<img width="1109" height="824" alt="image" src="https://github.com/user-attachments/assets/0040f3ee-edb4-4559-8f66-e3dfeaa6d8eb" />
+
+<img width="1834" height="669" alt="image" src="https://github.com/user-attachments/assets/ee098a41-497b-483c-9346-e105178f69fd" />
+
 
 ---
 
