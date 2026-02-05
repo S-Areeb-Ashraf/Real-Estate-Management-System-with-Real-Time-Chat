@@ -3,6 +3,12 @@
 This project is a full-stack real estate management platform that allows **landlords** to manage and advertise their properties, and **tenants** to browse, communicate, and manage their profiles. It includes a real-time chat system that enables direct communication between tenants and landlords via **WebSockets**.
 
 ---
+# Preview
+
+<img width="1919" height="778" alt="image" src="https://github.com/user-attachments/assets/db495bae-1312-4429-b8bc-8097f6f0e51d" />
+
+
+---
 
 ## Table of Contents
 - [Features](#-features)
